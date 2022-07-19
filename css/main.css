@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*COLORES
+header: #C5BEBE
+*/
+
+
+/*NEUTRALIDAD*/
+body{margin: 0;padding: 0;}
+
+/*ESTRUCTURAS*/
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    height: 75px;
+    background-color: #C5BEBE;
+}
