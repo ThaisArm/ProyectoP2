@@ -10,10 +10,235 @@ body{margin: 0;padding: 0;}
 
 /*ESTRUCTURAS*/
 body{
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
 }
 header{
-    height: 75px;
+    height: 65px;
     background-color: #C5BEBE;
+}
+
+.redes img{
+    width: 2.5%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.buscar{
+    position: absolute;
+    padding: 5px;
+    margin-top: 9px;
+    margin: 9px 9.5%;
+}
+
+.buscar input{
+    width: 350px;
+    height: 35px;
+    padding: 0 20px;
+    font-size: 17px;
+    color: black;
+    outline: none;
+    border: 1 solid silver;
+    border-radius: 30px;
+}
+
+.buscar .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #985e6d;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.259);
+}
+
+.buscar .btn:active{
+    background-color: #5e3a44;
+}
+
+.buscar .btn img{
+    width: 75%;
+    margin-top: 7px;
+}
+
+.barra .redes, .buscar, .botones{
+    display: inline;
+}
+
+.barra .botones .registrarse{
+    background: #192231;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.barra .botones .registrarse:active{
+    background: #10161f;
+    color: rgb(213, 213, 213);
+}
+
+.barra .botones .sesion{
+    background: #985e6d;
+    color: #fff;
+}
+
+.barra .botones .sesion:active{
+    background: #5e3a44;
+    color: rgb(213, 213, 213);
+}
+
+.barra .botones button{
+    outline: none;
+    border-radius: 10px;
+    border: 0px;
+    width: 150px;
+    height: 35px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.259);
+    font-size: 17px;
+}
+
+.botones{
+    margin-top: 13px;
+    float: right;
+    margin-right: 20px;
+}
+
+.barra .barra-opciones .logo img{
+    float: left;
+    width: 10%;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.barra .barra-opciones .logo,.categorias{
+    display: inline;
+}
+
+.barra .categorias p{
+    margin-left: 100px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.barra .barra-opciones{
+    margin-top: 45px;
+}
+
+.barra .categorias, p{
+    display: inline;
+}
+
+.categorias{
+    margin-left: 120px;
+    font-size: 18px;
+}
+
+.parte-superior .banner img{
+    width: 100%;
+}
+
+.peliculas-disponibles .titulo h1{
+    letter-spacing: 4px;
+    margin-top: 35px;
+    float: left;
+}
+
+.peliculas-disponibles button{
+        outline: none;
+        border-radius: 10px;
+        border: 0px;
+        width: 200px;
+        height: 35px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.259);
+        font-size: 17px;
+        margin-top: 50px;
+}
+
+.parte-superior .peliculas-disponibles .titulo, .peliculas-disponibles-botones{
+    display: inline;
+}
+
+.peliculas-disponibles .peliculas{
+    background: #985e6d;
+    color: #fff;
+    margin-right: 100px;
+}
+
+.peliculas-disponibles .peliculas:active{
+    background: #5e3a44;
+    color: rgb(213, 213, 213);
+}
+
+.peliculas-disponibles .tarifas{
+    background: none;
+    border: 2px solid #919191;
+    color: #919191;
+}
+
+.peliculas-disponibles .tarifas:active{
+    background: #8989897c;
+    color: rgb(130, 130, 130);
+}
+
+.peliculas-disponibles-botones{
+    float: right;
+    margin-right: 220px;
+}
+
+.disponibles{
+    margin-top: 140px;
+    font-size: 22px;
+}
+
+.galeria-peliculas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.imagen-pelicula{
+    width: 19%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-pelicula > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #19223192;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.hover-galeria p{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.imagen-pelicula:hover .hover-galeria{
+    transform: scale(1);
 }
